@@ -1,32 +1,60 @@
-.App {
-  text-align: center;
+.todo-app {
+    width: 30%;
+    box-sizing: border-box;
+    margin: 40px auto;
+    padding: 0 30px 30px 30px;
+    border: 1px solid crimson;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px ghostwhite;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+header {
+    width: fit-content;
+    margin: auto;
+    color: crimson;
+    font-size: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.input-task {
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    caret-color: crimson;
+    padding-left: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+    width: 50px;
+    height: 35px;
+    margin-left: 5px;
+    border-radius: 5px;
+    color: crimson;
+    font-size: 15px;
+    font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/*ToDo component*/
+
+.collection-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 15px;
 }
+
+input[type=checkbox] + label {
+    color: black;
+}
+input[type=checkbox]:checked + label {
+    text-decoration: line-through;
+}
+
+.fa-trash-alt {
+    cursor: pointer;
+    margin-right: 20px;
+    color: crimson;
+}
+
+
+
